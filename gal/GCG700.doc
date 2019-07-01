@@ -1,0 +1,175 @@
+
+*******************************************************************************
+                                    GCG700
+*******************************************************************************
+
+CUPL(WM)        5.0a Serial# 60008009
+Device          g20v8as  Library DLIB-h-40-1
+Created         Wed May 08 10:20:06 2019
+Name            GCG700
+Partno          00
+Revision        01
+Date            26/03/2019
+Designer        Engineer
+Company         EN
+Assembly        None
+Location
+
+===============================================================================
+                            Expanded Product Terms
+===============================================================================
+
+S_8255 =>
+    !A2 & !A3 & A4 & !A5 & !A6 & !A7 & !A8 & !A9 & !A10 & !A11 & !A12 & A13 &
+      A14 & A15 & !MREQ_bus
+
+S_CG =>
+    !MODE
+
+S_GCG =>
+    !MODE & IMPULSION_ECHANGE
+
+S_RAM =>
+    !MODE & !IMPULSION_ECHANGE
+
+
+===============================================================================
+                                 Symbol Table
+===============================================================================
+
+Pin Variable                                    Pterms   Max     Min
+Pol   Name              Ext     Pin     Type     Used   Pterms  Level
+--- --------            ---     ---     ----    ------  ------  -----
+
+    A2                          13       V        -       -       -
+    A3                          14       V        -       -       -
+    A4                          11       V        -       -       -
+    A5                          10       V        -       -       -
+    A6                          9        V        -       -       -
+    A7                          8        V        -       -       -
+    A8                          7        V        -       -       -
+    A9                          6        V        -       -       -
+    A10                         5        V        -       -       -
+    A11                         4        V        -       -       -
+    A12                         3        V        -       -       -
+    A13                         2        V        -       -       -
+    A14                         1        V        -       -       -
+    A15                         23       V        -       -       -
+    MODE                        16       V        -       -       -
+    IMPULSION_ECHANGE           17       V        -       -       -
+    MREQ_bus                    15       V        -       -       -
+    S_8255                      19       V        1       8       1
+    S_CG                        21       V        1       8       1
+    S_GCG                       22       V        1       8       1
+    S_RAM                       20       V        1       8       1
+
+
+LEGEND    D : default variable         F : field      G : group
+          I : intermediate variable    N : node       M : extended node
+          U : undefined                V : variable   X : extended variable
+          T : function
+
+
+===============================================================================
+                                   Fuse Plot
+===============================================================================
+
+Syn   02704 - Ac0   02705 x
+
+Pin #22  02560  Pol x  02632  Ac1 x
+ 00000 ----------------------x----x------------
+ 00040 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 00080 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 00120 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 00160 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 00200 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 00240 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 00280 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Pin #21  02561  Pol -  02633  Ac1 x
+ 00320 ---------------------------x------------
+ 00360 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 00400 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 00440 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 00480 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 00520 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 00560 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 00600 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Pin #20  02562  Pol -  02634  Ac1 x
+ 00640 -----------------------x---x------------
+ 00680 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 00720 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 00760 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 00800 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 00840 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 00880 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 00920 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Pin #19  02563  Pol x  02635  Ac1 x
+ 00960 x-x--xx--x---x---x---x---x---x-x-x-xx--x
+ 01000 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 01040 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 01080 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 01120 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 01160 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 01200 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 01240 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Pin #18  02564  Pol x  02636  Ac1 -
+ 01280 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 01320 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 01360 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 01400 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 01440 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 01480 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 01520 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 01560 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Pin #17  02565  Pol x  02637  Ac1 -
+ 01600 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 01640 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 01680 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 01720 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 01760 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 01800 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 01840 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 01880 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Pin #16  02566  Pol x  02638  Ac1 -
+ 01920 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 01960 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 02000 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 02040 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 02080 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 02120 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 02160 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 02200 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+Pin #15  02567  Pol x  02639  Ac1 -
+ 02240 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 02280 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 02320 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 02360 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 02400 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 02440 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 02480 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+ 02520 xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+
+
+LEGEND    X : fuse not blown
+          - : fuse blown
+
+===============================================================================
+                                 Chip Diagram
+===============================================================================
+
+                               ______________
+                              |    PCG700    |
+                      A14 x---|1           24|---x Vcc
+                      A13 x---|2           23|---x A15
+                      A12 x---|3           22|---x S_GCG
+                      A11 x---|4           21|---x S_CG
+                      A10 x---|5           20|---x S_RAM
+                       A9 x---|6           19|---x S_8255
+                       A8 x---|7           18|---x
+                       A7 x---|8           17|---x IMPULSION_ECHANGE
+                       A6 x---|9           16|---x MODE
+                       A5 x---|10          15|---x MREQ_bus
+                       A4 x---|11          14|---x A3
+                      GND x---|12          13|---x A2
+                              |______________|
+
