@@ -14,6 +14,7 @@ Liste du materiel :
  - 1 62256ALP-10 RAM
  - 1 2764 EPROM
  - 1 GAL20V8
+ - 1 Resistor 10k
 
 
 EN:
@@ -30,3 +31,4 @@ BOM:
  - 1 62256ALP-10 RAM
  - 1 2764 EPROM
  - 1 GAL20V8
+ - 1 Resistor 10k
