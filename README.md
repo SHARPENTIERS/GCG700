@@ -15,6 +15,7 @@ Liste du materiel :
  - 1 2764 EPROM
  - 1 GAL20V8
  - 1 Resistor 10k
+ - 10 condensateurs 100nF/16V
 
 
 EN:
@@ -32,3 +33,4 @@ BOM:
  - 1 2764 EPROM
  - 1 GAL20V8
  - 1 Resistor 10k
+ - 10 condensators 100nF/16V
