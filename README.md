@@ -1,5 +1,7 @@
 # GCG700 - PCG for Sharp MZ-700
 
+License : GNU GPL V2
+
 FR:
 Voici une petite carte permettant d'avoir un generateur de caracteres programmable (GCG) pouvant obtenir 4 plans graphiques de 4 jeux de 256 caracteres, soit au total 4096 caracteres.
 On peut afficher 4 ecrans de 320x200 pixels et 8 couleurs par blocs de 8x8 bits.

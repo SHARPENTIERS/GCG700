@@ -1,5 +1,7 @@
 #!/bin/bash
 #
+# GNU GPL V2
+#
 CHEMIN=`pwd`
 SOURCE="demo_gcg.asm"
 NOM="demo_gcg"
